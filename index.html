@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include the script for your ad network -->
+    <script src="https://example.com/ad-network-script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div>
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="date" id="birthdate" placeholder="YYYY-MM-DD">
+        </div>
+        <div>
+            <!-- Buttons for each ad type -->
+            <button id="calculate-btn" onclick="calculateAge()">Calculate Age</button>
+            <button id="reset-btn" onclick="resetForm()">Reset</button>
+            <button id="vignette-banner-btn" onclick="showVignetteBanner()">Show Vignette Banner</button>
+            <button id="native-banner-btn" onclick="showNativeBanner()">Show Native Banner</button>
+            <button id="push-notification-btn" onclick="sendPushNotification()">Send Push Notification</button>
+            <button id="onclick-btn" onclick="triggerOnClick()">Trigger OnClick (Popunder, In-Page Push)</button>
+        </div>
+        <div id="result"></div>
+
+        <!-- Ad sections -->
+        <div id="vignette-banner-ad"></div>
+        <div id="native-banner-ad"></div>
+        <div id="push-notification-ad"></div>
+        <div id="onclick-ad"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
