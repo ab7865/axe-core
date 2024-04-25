@@ -1,0 +1,61 @@
+// script.js
+
+// Function to calculate age and display the result
+function calculateAge() {
+    const birthdateInput = document.getElementById('birthdate');
+    const birthdate = new Date(birthdateInput.value);
+    const currentDate = new Date();
+
+    // Calculate the difference in years, months, days, hours, minutes, and seconds
+    let ageInMilliseconds = currentDate - birthdate;
+    
+    let ageInSeconds = Math.floor(ageInMilliseconds / 1000);
+    let ageInMinutes = Math.floor(ageInSeconds / 60);
+    let ageInHours = Math.floor(ageInMinutes / 60);
+    let ageInDays = Math.floor(ageInHours / 24);
+    let ageInYears = Math.floor(ageInDays / 365.25);
+
+    // Calculate the remaining days, hours, minutes, and seconds
+    ageInDays = ageInDays % 365;
+    ageInHours = ageInHours % 24;
+    ageInMinutes = ageInMinutes % 60;
+    ageInSeconds = ageInSeconds % 60;
+
+    // Display the result
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerText = `Your age is ${ageInYears} years, ${ageInDays} days, ${ageInHours} hours, ${ageInMinutes} minutes, and ${ageInSeconds} seconds.`;
+}
+
+// Function to reset the form and result
+function resetForm() {
+    const birthdateInput = document.getElementById('birthdate');
+    const resultDiv = document.getElementById('result');
+    
+    birthdateInput.value = '';
+    resultDiv.innerText = '';
+}
+
+// Function to show Vignette Banner ad
+function showVignetteBanner() {
+    const adContainer = document.getElementById('vignette-banner-ad');
+<script async="async" data-cfasync="false" src="//thubanoa.com/1?z=7067905"></script>}
+
+// Function to show Native Banner ad
+function showNativeBanner() {
+    const adContainer = document.getElementById('native-banner-ad');
+    <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('aistekso.net',7067913,document.createElement('script'))</script>}
+
+// Function to send a push notification ad
+function sendPushNotification() {
+    const adContainer = document.getElementById('push-notification-ad');
+<script src="https://uwoaptee.com/pfe/current/tag.min.js?z=7067879" data-cfasync="false" async></script>}
+
+// Function to trigger OnClick (Popunder, In-Page Push) ad
+function triggerOnClick() {
+    const adContainer = document.getElementById('onclick-ad'); //http://offers.propellerads.com/api/v1/ads/7393675/?auth=a03fa2e6130ba6c8f73eeb186ec14d6299b71e15&ua={UA_of_the_user}&ip={IP_of_the_user}&var={Request_variable}
+
+// Add event listeners for ad buttons
+document.getElementById('vignette-banner-btn').addEventListener('click', showVignetteBanner);
+document.getElementById('native-banner-btn').addEventListener('click', showNativeBanner);
+document.getElementById('push-notification-btn').addEventListener('click', sendPushNotification);
+document.getElementById('onclick-btn').addEventListener('click', triggerOnClick);
